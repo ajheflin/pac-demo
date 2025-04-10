@@ -11,9 +11,6 @@ spec:
     - Cryptocurrency Mining
   lifecycleStages:
     - DEPLOY
-  scope:
-    - namespace: shooter
-      cluster: remote
   severity: MEDIUM_SEVERITY
   policySections:
   - sectionName: Policy Section 1
