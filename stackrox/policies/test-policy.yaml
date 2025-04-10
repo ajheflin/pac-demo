@@ -4,6 +4,7 @@ metadata:
   name: test-policy
 spec:
   policyName: This is a test policy
+  notifiers: ["slack-notifier"]
   description: |
     This is a test policy that shows how to manage a policy
     using the new Policy as Code feature in StackRox.
@@ -12,6 +13,8 @@ spec:
   lifecycleStages:
     - DEPLOY
   severity: MEDIUM_SEVERITY
+  scope:
+    - cluster: remote
   policySections:
   - sectionName: Policy Section 1
     policyGroups:
