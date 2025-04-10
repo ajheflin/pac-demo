@@ -3,6 +3,7 @@ kind: SecurityPolicy
 metadata:
   name: test-policy
 spec:
+  notifiers: ["test-notifier"]
   policyName: This is a test policy
   description: |
     This is a test policy that shows how to manage a policy
@@ -13,6 +14,7 @@ spec:
     - DEPLOY
   scope:
     - namespace: shooter
+      cluster: remote
   severity: MEDIUM_SEVERITY
   policySections:
   - sectionName: Policy Section 1
