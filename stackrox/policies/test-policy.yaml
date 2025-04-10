@@ -3,7 +3,7 @@ kind: SecurityPolicy
 metadata:
   name: test-policy
 spec:
-  notifiers: ["test-notifier"]
+  notifiers: ["slack-notifier"]
   policyName: This is a test policy
   description: |
     This is a test policy that shows how to manage a policy
